@@ -1,1 +1,28 @@
 #Projeto Credenciamento
+# Credenciamento Docente PPGE (Case ME315)
+
+Este repositório contém a solução do Case ME315, com a implementação das regras dos Artigos X e Y para o credenciamento docente no PPGE.
+
+## 🌐 Acesse o App (na nuvem)
+O site está hospedado publicamente no Streamlit Community Cloud:
+👉 **[Acessar o Credenciamento PPGE](https://credenciamento-ppge-me315.streamlit.app/)**
+
+*   **Usuário:** `professor`
+*   **Senha:** `admin123`
+*   *(Nota: O Streamlit Cloud hiberna após um tempo sem uso. Se a página inicial demorar, basta clicar em "Yes, get this app back up!").*
+
+## 🛠️ Tecnologias Utilizadas
+*   **Python**
+*   **Streamlit** (Interface web)
+*   **Pytest** (Testes unitários da regra de negócio)
+
+## 📁 Estrutura do Projeto
+*   `app.py`: Código da interface web (Streamlit) e tela de login.
+*   `core/regras.py`: Lógica de cálculo do Artigo X e Artigo Y.
+*   `tests/test_regras.py`: Testes automatizados garantindo que a regra funciona.
+
+## ⚙️ Como rodar o projeto localmente
+1. Clone o repositório.
+2. Instale as dependências: `pip install -r requirements.txt`
+3. Execute o app: `streamlit run app.py`
+4. Rode os testes: `python -m pytest`
